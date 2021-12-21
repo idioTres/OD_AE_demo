@@ -1,0 +1,12 @@
+.CardContainer {
+  background-color: white;
+  max-width: 78vw;
+  min-width: min(480px, 78vw);
+
+  box-shadow: black 0px 0px 2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.Card {
+  margin: 5rem;
+}

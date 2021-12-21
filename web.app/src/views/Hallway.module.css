@@ -1,0 +1,27 @@
+.Hallway {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HallwayButtonFrame {
+  max-width: min(480px, 78vw);
+  min-width: min(480px, 78vw);
+  display: flex;
+  justify-content: space-between;
+}
+
+.HallwayButton {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: black 0px 0px 2rem 0.5rem;
+}
+

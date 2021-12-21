@@ -1,0 +1,50 @@
+.TextInput {
+  position: relative;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-radius: 4px;
+  border: 2px solid #AFAFAF;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.TextInput.focus {
+  border: 2px solid #282c34;
+}
+
+.Tag {
+  transition: all 0.1s ease-in-out;
+  position: absolute;
+  background: white;
+}
+
+.TextInput > .Tag {
+  color: #282c34;
+  top: -0.65rem;
+  left: 0.65rem;
+  padding: 0 calc(0.65rem / 4);
+  font-size: 0.9rem;
+}
+
+.TextInput.empty:not(.focus) > .Tag {
+  color: #AFAFAF;
+  top: 0.65rem;
+  left: 0rem;
+  padding: 0 0.65rem;
+}
+
+.TextInput > input[type='text'] {
+  border: none;
+  padding: 0 0.65rem;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.TextInput > input[type='text']:focus {
+  outline: none;
+}
